@@ -1,0 +1,46 @@
+@0
+
+
+@1
+MOV UP, DOWN
+
+@2
+
+
+@3
+
+
+@4
+L: MOV UP, ACC
+JNZ N
+MOV -999, RIGHT
+MOV -999, DOWN
+JMP L
+N: MOV 1, RIGHT
+MOV ACC, DOWN
+
+@5
+MOV LEFT, DOWN
+
+@6
+
+
+@7
+
+
+@8
+L: ADD UP
+JGZ L
+ADD 999
+MOV ACC, DOWN
+SUB ACC
+
+@9
+L: ADD UP
+JGZ L
+ADD 999
+MOV ACC, DOWN
+SUB ACC
+
+@10
+

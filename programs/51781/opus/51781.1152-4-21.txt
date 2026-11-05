@@ -1,0 +1,49 @@
+@0
+
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV ACC, DOWN
+SWP
+MOV 7, ACC
+L: MOV 0, DOWN
+MOV 0, DOWN
+SUB 1
+JNZ L
+MOV -1, DOWN
+SWP
+ADD 1
+
+@6
+MOV 0, DOWN
+MOV 1, DOWN
+
+@7
+
+
+@8
+
+
+@9
+MOV RIGHT, DOWN
+MOV UP, DOWN
+
+@10
+MOV UP, LEFT
+MOV 5, ACC
+L: MOV 3, LEFT
+MOV 3, LEFT
+MOV 3, LEFT
+SUB 1
+JNZ L

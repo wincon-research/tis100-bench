@@ -1,0 +1,46 @@
+@0
+
+
+@1
+MOV UP, DOWN
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV UP, ACC
+SAV
+C: SUB 8
+JLZ D
+SWP
+ADD 2
+SWP
+SUB 8
+JLZ D
+SWP
+ADD 2
+SWP
+JMP C
+D: SWP
+MOV ACC, DOWN
+
+@6
+
+
+@7
+
+
+@8
+MOV UP, RIGHT
+
+@9
+MOV LEFT, DOWN
+
+@10
+

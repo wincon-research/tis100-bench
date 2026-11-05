@@ -1,0 +1,57 @@
+@0
+
+
+@1
+MOV UP, DOWN
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV UP, DOWN
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+NW: MOV UP, ACC
+SAV
+MOV UP, ACC
+JMP LP
+CT: SWP
+LP: MOV ACC, RIGHT
+SWP
+SUB 1
+JGZ CT
+JMP NW
+
+@10
+MOV 30, ACC
+MOV 0, DOWN
+MOV 0, DOWN
+LP: MOV LEFT, DOWN
+SUB 1
+JGZ LP
+MOV -1, DOWN
+MOV 0, DOWN
+SWP
+ADD 1
+SAV
+MOV ACC, DOWN
+MOV 30, ACC
+JMP LP
+
+@11
+

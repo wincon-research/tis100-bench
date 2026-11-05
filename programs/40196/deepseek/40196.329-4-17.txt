@@ -1,0 +1,45 @@
+@0
+
+
+@1
+MOV 3, ACC
+SAV
+L: MOV UP, ACC
+JNZ NZ
+SWP
+SUB 1
+SAV
+JGZ O
+MOV 1, DOWN
+JMP L
+NZ: MOV 3, ACC
+SAV
+O: MOV 0, DOWN
+JMP L
+
+@2
+
+
+@3
+
+
+@4
+MOV UP, RIGHT
+
+@5
+MOV LEFT, DOWN
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+MOV UP, DOWN
+
+@10
+

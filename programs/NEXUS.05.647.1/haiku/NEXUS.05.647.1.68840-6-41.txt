@@ -1,0 +1,52 @@
+@0
+MOV UP, DOWN
+
+@1
+MOV UP, DOWN
+
+@5
+MOV UP, RIGHT
+
+@6
+top: MOV 0, ACC
+SAV
+MOV LEFT, ACC
+loop: SUB 2
+JLZ done
+SWP
+ADD 1
+SWP
+JMP loop
+done: SWP
+MOV ACC, DOWN
+MOV ACC, RIGHT
+JMP top
+
+@7
+top: MOV 0, ACC
+SAV
+MOV LEFT, ACC
+loop: SUB 2
+JLZ done
+SWP
+ADD 1
+SWP
+JMP loop
+done: SWP
+MOV ACC, DOWN
+MOV ACC, RIGHT
+JMP top
+
+@8
+top: MOV 0, ACC
+SAV
+MOV LEFT, ACC
+loop: SUB 2
+JLZ done
+SWP
+ADD 1
+SWP
+JMP loop
+done: SWP
+MOV ACC, DOWN
+JMP top

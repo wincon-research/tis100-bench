@@ -1,0 +1,39 @@
+@0
+
+
+@1
+MOV UP, ACC
+ADD ACC
+SUB 1
+L: MOV ACC, DOWN
+SUB 4
+JGZ L
+MOV -1000, DOWN
+
+@2
+
+
+@3
+
+
+@4
+L2: ADD UP
+JGZ L2
+SUB -1000
+MOV ACC, DOWN
+SUB ACC
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+MOV UP, DOWN
+
+@9
+

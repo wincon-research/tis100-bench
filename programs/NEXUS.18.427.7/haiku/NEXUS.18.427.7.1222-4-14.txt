@@ -1,0 +1,42 @@
+@0
+
+
+@1
+MOV UP, RIGHT
+
+@2
+MOV LEFT, ACC
+SUB 2
+SAV
+ADD 3
+LP: SWP
+ADD 2
+SWP
+SUB 8
+JGZ LP
+SWP
+MOV ACC, DOWN
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+MOV UP, DOWN
+
+@7
+
+
+@8
+
+
+@9
+MOV UP, DOWN
+
+@10
+

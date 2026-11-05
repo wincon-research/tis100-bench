@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use these programs or results, please cite TIS-100 Bench."
+type: dataset
+title: "TIS-100 Bench: LLMs Push the Pareto Frontier in Programming Puzzle Games"
+authors:
+  - name: Wincon
+version: "2026-11-03-v5"
+date-released: 2026-11-03
+url: "https://tis-100.wincon.dev/"
+repository-code: "https://github.com/wincon-research/tis100-bench"
+license: MIT
+keywords: [llm-evaluation, benchmark, tis-100, assembly, program-synthesis, pareto-frontier]

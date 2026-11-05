@@ -1,0 +1,40 @@
+@0
+
+
+@1
+MOV UP, DOWN
+
+@2
+
+
+@3
+
+
+@4
+S: MOV UP, ACC
+ADD ACC
+SUB 1
+JMP L
+C: MOV -1, DOWN
+L: MOV ACC, DOWN
+SUB 4
+JGZ C
+MOV 1, DOWN
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+L: ADD UP
+JRO UP
+MOV ACC, DOWN
+SUB ACC
+
+@9
+

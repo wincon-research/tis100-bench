@@ -1,0 +1,40 @@
+@0
+
+
+@1
+MOV UP, RIGHT
+
+@2
+P: MOV UP, ACC
+SAV
+MOV LEFT, ACC
+JEZ T
+S: SWP
+MOV ACC, DOWN
+SWP
+SUB 1
+JGZ S
+T: MOV -999, DOWN
+
+@3
+
+
+@4
+
+
+@5
+MOV UP, DOWN
+
+@6
+
+
+@7
+L: ADD UP
+JLZ F
+JMP L
+F: ADD 999
+MOV ACC, DOWN
+MOV 0, ACC
+
+@8
+

@@ -1,0 +1,48 @@
+@0
+L: MOV UP, ACC
+   MOV ACC, DOWN
+   JNZ L
+   MOV DOWN, NIL
+
+@3
+P: MOV 0, RIGHT
+   MOV ANY, ACC
+   MOV ACC, RIGHT
+   JNZ L
+   MOV 0, UP
+   JMP P
+L: MOV ANY, ACC
+   MOV ACC, RIGHT
+   JNZ L
+   MOV 0, DOWN
+
+@4
+S: MOV LEFT, UP
+   JMP M
+L1:MOV ACC, UP
+M: MOV LEFT, ACC
+   JNZ L1
+   MOV UP, ACC
+   MOV ACC, DOWN
+   JEZ E
+L2:MOV UP, ACC
+E: MOV ACC, DOWN
+   MOV ACC, DOWN
+   JNZ L2
+
+@7
+   MOV UP, ACC
+L: SAV
+   SUB UP
+   JLZ LS
+   MOV UP, ACC
+   JEZ O
+   SWP
+   MOV ACC, LEFT
+   SWP
+   JMP L
+LS:MOV UP, LEFT
+   SWP
+   JMP L
+O: SWP
+   MOV ACC, DOWN

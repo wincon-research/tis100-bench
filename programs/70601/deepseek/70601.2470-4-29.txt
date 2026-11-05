@@ -1,0 +1,60 @@
+@0
+
+
+@1
+L: MOV UP, ACC
+   SAV
+   MOV UP, ACC
+   MOV ACC, DOWN
+   SWP
+C: SUB 3
+   JLZ S
+   MOV 1, DOWN
+   ADD 1
+   JMP C
+S: NEG
+   MOV ACC, DOWN
+E: MOV -1, DOWN
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV UP, RIGHT
+
+@6
+   MOV LEFT, ACC
+L: JRO LEFT
+   MOV ACC, DOWN
+   MOV ACC, DOWN
+   JMP L
+
+@7
+
+
+@8
+
+
+@9
+
+
+@10
+R: MOV -1, DOWN
+   MOV 0, DOWN
+   SWP
+   MOV ACC, DOWN
+   ADD 1
+   SAV
+   MOV 30, ACC
+L: MOV UP, DOWN
+   SUB 1
+   JGZ L
+
+@11
+
